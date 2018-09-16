@@ -1,6 +1,21 @@
+var a = document.getElementById('a').value;
+var b = document.getElementById('b').value;
+var c = document.getElementById('c').value;
+var Triangle = document.getElementById('Triangle').value;
+
+
+
+
 var a=parseInt(prompt("input 1"))
 var b=parseInt(prompt("input 2"))
 var c=parseInt(prompt("input 3"))
+
+
+
+
+
+
+
 
 
 
