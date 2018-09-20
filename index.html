@@ -3,31 +3,38 @@
 <head>
    
     <title>TRIANGLE  TRACKER</title>
-    <link rel="stylesheet" type="text/css" media="screen" href="css/styles.css" />
-    <script src="scripts.js"></script>
+    <link rel="stylesheet" type="text/css" href="css/styles.css" />
+    <script src="js/scripts.js"></script>
 </head>
 <body>
-    <h1><span class="highlight">TRIANGLE</span> TRACKER
-    </h1>
-
-<form>
- <p><input type=int name='a' id='a'>
-  <label for='a'>Please enter your first value</label></p>
+ <h1><span class="highlight">TRIANGLE</span> TRACKER
+  <link href='http://fonts.googleapis.com/css?family=Oleo+Script' rel='stylesheet' type='text/css'>    
+</h1>
+  <div class="sidebar">
+  <br>
+    <div>
+    <label for="a">Please enter your first value</label>
+    <input type="number" id="A">
+    </div>
+<br>
+    <div>
+    <label for="b">Please enter your second value</label>
+    <input type="number" id="B">
+    </div>
+<br>
+    <div>
+    <label for="c">Please enter your third value</label>
+    <input type="number" id="C">
+    </div>
+<br>
+  <div id ="feedback"> </div>
   
- <p> <input type=int name='b' id='b'>
-  <label for='b'>Please enter your second value</label></p>
-  
- <p><input type=int name='c' id='c'>
-  <label for='b'>Please enter your third value</label></p>
-
-  <input type='button' value="Discover">
-  
-    </form>
-
-
-
-
-
+  <button type="submit" onclick="answer();"> Discover</button>
+  <br>
+  </div>
 
 </body>
+<footer>
+  <p>Amos Mworia Web Portfolio, Copyright &copy; 2018</p>
+</footer>
 </html>
