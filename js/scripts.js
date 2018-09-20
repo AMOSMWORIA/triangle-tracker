@@ -1,35 +1,31 @@
-var a = document.getElementById('a').value;
-var b = document.getElementById('b').value;
-var c = document.getElementById('c').value;
-var Triangle = document.getElementById('Triangle').value;
+function answer () {
 
+var a =parseInt(document.getElementById("A").value);
+var b =parseInt(document.getElementById("B").value);
+var c =parseInt(document.getElementById("C").value);
+var display = document.getElementById("feedback");
 
+console.log(a);
+console.log(b);
+console.log(c);
 
-
-var a=parseInt(prompt("input 1"))
-var b=parseInt(prompt("input 2"))
-var c=parseInt(prompt("input 3"))
-
-
-
-
-
-
-
-
-
-
-var Triangle = true
-
-if ( a+b<=c||a+c<=d||b+c<=a ){
-   console.log("notTriangle") 
+if (isNaN(a) || isNaN(b) || isNaN(c)){
+    display.innerHTML = "This is an Invalid input";
 }
-else if (a===b&&a===c&&b===c) {
-  console.log("equilateral")
-} 
-else if (a===b||a===c||b===c &&a!==b||b!==c||c!==a){
-   console.log("Isosceles") 
+
+else if( (a+b)<=c||(a+c)<=b||(b+c)<=a ){
+    display.innerHTML="This is not a Triangle";
 }
+
+else if (a===b && a===c && b===c){
+display.innerHTML = "This is an Equilateral Triangle";
+}
+
+else if (a===b||a===c||b===c){
+    display.innerHTML="This is an Isosceles";
+}
+
 else if (a!==b||a!==c&&b!==c){
-   console.log("scalene") 
+    display.innerHTML="This is a scalene";
+  } 
 }
